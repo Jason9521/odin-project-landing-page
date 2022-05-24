@@ -1,0 +1,303 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(/shark-images/ocean.jpg);
+    background-repeat: no-repeat;
+    background-size: 2000px 2000px;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NAVBAR */
+
+nav {
+    height: 60px;
+    width: 100vw;
+    background-color: #333;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-header h2 {
+    color: rgb(88, 199, 214);
+    font-size: 24px;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: 700;
+    padding: 10px 10px;
+    margin: 0px 10px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: rgb(17, 81, 133);
+    border-radius: 10px;
+    transition: background-color 1s;
+}
+
+.nav-links a:hover {
+    background-color: rgb(29, 132, 216);
+}
+
+/* HEADING */
+
+.heading {
+    background-color: rgb(88, 199, 214);
+    border: solid 3px;
+    border-radius: 20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    margin: 100px auto;
+    max-width: 1030px;
+    padding: 40px; 
+}
+
+.heading-text {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+
+.heading-text h2 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.heading-text p {
+    font-size: 18px;
+}
+
+.heading button {
+    background-color: rgb(17, 81, 133);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    width: 300px;
+    padding: 10px;
+    transition-duration: 1s;
+}
+
+.heading button:hover {
+    background-color: rgb(29, 132, 216);
+    cursor: pointer;
+}
+
+.heading img {
+    border: rgb(17, 81, 133) solid 3px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+/* INFORMATION */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 100px;
+    background-color: rgb(17, 81, 133);
+    border: #333 solid 3px;
+    border-radius: 20px;
+    color: rgb(88, 199, 214);
+    max-width: 1030px;
+}
+
+.info h3 {
+    color: rgb(88, 199, 214);
+    display: flex;
+    font-size: 36px;
+    font-weight: 900;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.info-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+}
+
+.img-one,
+.img-two,
+.img-three,
+.img-four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-one img,
+.img-two img,
+.img-three img,
+.img-four img {
+    height: 200px;
+    width: 230px;
+    border: rgb(88, 199, 214) solid 3px;
+    border-radius: 10px;
+    margin: 0px 10px;
+}
+
+.img-one p,
+.img-two p,
+.img-three p,
+.img-four p {
+    margin-top: 20px;
+    padding-bottom: 60px;
+    width: 200px;
+}
+
+/* QUOTE */
+
+.quote {
+    margin: 0 auto;
+    padding: 50px;
+    background-color: rgba(51, 51, 51, 0.8);
+    max-width: 1030px;
+    border: #333 solid 3px;
+    border-radius: 10px;
+}
+
+.quote p {
+    font-size: 36px;
+    font-style: italic;
+    color: rgb(88, 199, 214);
+}
+
+.quote h5 {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    color: rgb(88, 199, 214);
+}
+
+/* SIGN UP */
+
+.sign-up {
+    background-color: rgb(17, 81, 133);
+    margin: 100px auto;
+    height: 300px;
+    max-width: 1030px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 3px #333;
+    border-radius: 10px;
+}
+
+.sign-up-container {
+    background-color: rgb(88, 199, 214);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    padding: 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.sign-up-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 30px;
+}
+
+.sign-up-button {
+    height: 40px;
+    min-width: 120px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    background-color: rgb(17, 81, 133);
+    transition-duration: 1s;
+}
+
+.sign-up-button:hover {
+    cursor: pointer;
+    background-color: rgb(29, 132, 216);
+}
+
+/* FOOTER */ 
+
+footer h4 {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: rgb(88, 199, 214);
+}
+
+/* MISC */
+
+.heading,
+.info,
+.quote,
+.sign-up {
+    width: 98%;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 765px) {
+
+    nav {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 120px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        margin: 0px 5px;
+    }
+
+    .heading {
+        flex-direction: column;
+    }
+
+    .heading-text {
+        text-align: center;
+        width: 400px;
+        margin: 0;
+    }
+
+    .heading-text p {
+        margin: 20px 0;
+    }
+
+    .heading img {
+        margin-top: 50px;
+    }
+
+    .heading button {
+        margin: auto;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .sign-up-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sign-up-text {
+        padding-right: 0;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+}
